@@ -1,0 +1,2 @@
+version=4
+https://github.com/gildor478/ocaml-fileutils/tags .*/archive/refs/tags/v?(\d[\d.]*)\.tar\.gz

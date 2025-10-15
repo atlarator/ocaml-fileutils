@@ -1,5 +1,274 @@
-template-repository (1.0-1) unstable; urgency=medium
+ocaml-fileutils (0.6.6-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream release
+  * Bump Standards-Version to 4.7.0
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 19 Jan 2025 11:20:33 +0100
+
+ocaml-fileutils (0.6.4-4) unstable; urgency=medium
+
+  * Team upload
+  * Depend on ocaml instead of transitional ocaml-nox
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 12 Sep 2023 09:28:42 +0200
+
+ocaml-fileutils (0.6.4-3) unstable; urgency=medium
+
+  * Team upload
+  * Include ocamlvars.mk in debian/rules
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 23 Jul 2023 07:31:38 +0200
+
+ocaml-fileutils (0.6.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Use ocaml_dune DH buildsystem
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 15 Jul 2023 14:45:05 +0200
+
+ocaml-fileutils (0.6.4-1) unstable; urgency=medium
+
+  [ Stéphane Glondu ]
+  * Team upload
+  * New upstream release
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update watch file format version to 4.
+  * Update pattern for GitHub archive URLs from /<org>/<repo>/tags
+    page/<org>/<repo>/archive/<tag> -> /<org>/<repo>/archive/refs/tags/<tag>.
+  * debian/watch: Use GitHub /tags rather than /releases page.
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 22 Jan 2023 11:56:52 +0100
+
+ocaml-fileutils (0.6.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump debhelper compat level to 13
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 24 Aug 2020 06:54:20 +0200
+
+ocaml-fileutils (0.5.3-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove oasis from Build-Depends, fixing a dependency loop; commit the
+    output of "oasis setup" as a patch instead
+  * Bump debhelper compat level to 12
+  * Bump Standards-Version to 4.4.0
+  * Remove Hendrik from Uploaders
+
+ -- Stéphane Glondu <glondu@debian.org>  Wed, 31 Jul 2019 17:11:06 +0200
+
+ocaml-fileutils (0.5.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New homepage (update d/watch file accordingly)
+  * New upstream release
+  * Bump Standards-Version to 4.1.4, no changes required
+  * Move Git repository to Salsa, and update Vcs-* headers accordingly
+  * Add oasis and libfindlib-ocaml-dev to Build-Depends, needed by setup.ml
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Fri, 11 May 2018 11:20:56 +0200
+
+ocaml-fileutils (0.5.2-1) unstable; urgency=low
+
+  [ Stéphane Glondu ]
+  * Team upload
+  * New upstream release
+  * Update Vcs-*
+  * Bump Standards-Version to 4.0.0
+  * Bump debhelper compat to 10
+  * Recommend ocaml-findlib
+  * Add ocamlbuild to Build-Depends
+
+  [ Sylvain Le Gall ]
+  * Remove Sylvain Le Gall from Uploaders.
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 16 Jul 2017 13:39:14 +0200
+
+ocaml-fileutils (0.4.5-4) unstable; urgency=low
+
+  * Team upload
+  * Upload to unstable
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 03 Dec 2013 21:21:52 +0100
+
+ocaml-fileutils (0.4.5-3) experimental; urgency=low
+
+  [ Stéphane Glondu ]
+  * Team upload
+  * Compile with OCaml >= 4
+
+  [ Hendrik Tews ]
+  * enable tests again
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 26 Jul 2013 22:11:05 +0200
+
+ocaml-fileutils (0.4.5-2) unstable; urgency=low
+
+  * delete lintian spelling error override
+
+ -- Hendrik Tews <hendrik@askra.de>  Tue, 04 Jun 2013 13:00:40 +0200
+
+ocaml-fileutils (0.4.5-1) UNRELEASED; urgency=low
+
+  * silent lintian canonical vcs info
+  * new upstream version (fixes BSD build error)
+  * remove html doc renaming
+  * use dh_ocamldoc again
+  * add lintian override for non-existing spelling error
+
+ -- Hendrik Tews <hendrik@askra.de>  Mon, 03 Jun 2013 12:10:54 +0200
+
+ocaml-fileutils (0.4.4-1) unstable; urgency=low
+
+  * update watch file
+  * new upstream version
+  * change build system to debhelper/quilt
+  * bump debhelper compat and standards versions
+  * adjust dependencies
+  * fix copyright
+  * delete obsolete files in debian
+  * add myself as uploader
+  * add doc-base
+
+ -- Hendrik Tews <hendrik@askra.de>  Thu, 30 May 2013 20:25:35 +0200
+
+ocaml-fileutils (0.4.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Get rid of dpatch dependencies
+  * Update homepage URL
+
+ -- Sylvain Le Gall <gildor@debian.org>  Mon, 06 Sep 2010 21:30:36 +0200
+
+ocaml-fileutils (0.4.0-2) unstable; urgency=low
+
+  * Only use byte plugin (Closes: #550344)
+
+ -- Sylvain Le Gall <gildor@debian.org>  Fri, 09 Oct 2009 22:40:03 +0200
+
+ocaml-fileutils (0.4.0-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Upgrade Standards-Version to 3.8.3 (section ocaml)
+  * Remove all patches (integrated upstream)
+  * Use dh_ocaml 0.9 (dh_ocamldoc, depends/provides)
+
+ -- Sylvain Le Gall <gildor@debian.org>  Thu, 08 Oct 2009 22:11:48 +0000
+
+ocaml-fileutils (0.3.0-14) unstable; urgency=low
+
+  * Use ocaml 3.10.0-9 for generating .ocamldoc-apiref automatically
+  * Add patch to handle largefile in 'du'
+  * Switch packaging to git
+  * Add dh-ocaml build-dependency (rules/ocaml.mk)
+  * Set maintainer to Debian OCaml Maintainers
+  * Upgrade Standards-Version to 3.8.0 (debian/README.source)
+  * Add Homepage field to debian/control
+  * Add ${misc:Depends} to dependencies
+  * Update debian/copyright file to use
+    http://wiki.debian.org/Proposals/CopyrightFormat
+  * Remove obsolete debian/control.in related variables and files
+  * Rewrite description of debian/control
+
+ -- Sylvain Le Gall <gildor@debian.org>  Sat, 07 Mar 2009 14:37:08 +0100
+
+ocaml-fileutils (0.3.0-13) unstable; urgency=low
+
+  * Build for ocaml 3.10.0
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 04 Sep 2007 00:26:45 +0200
+
+ocaml-fileutils (0.3.0-12) experimental; urgency=low
+
+  * Ooops, depends field is empty
+
+ -- Sylvain Le Gall <gildor@debian.org>  Sat, 14 Jul 2007 01:51:29 +0200
+
+ocaml-fileutils (0.3.0-11) experimental; urgency=low
+
+  * Upgrade debian/watch version to 3,
+  * Upgrade debhelper debian/compat to 5,
+  * Use CDBS for debian/rules,
+  * Change email address to gildor@debian.org everywhere
+  * Rebuild for ocaml 3.10.0
+  * Add dependency on camlp4
+
+ -- Sylvain Le Gall <gildor@debian.org>  Sat, 07 Jul 2007 23:26:25 +0200
+
+ocaml-fileutils (0.3.0-10) unstable; urgency=low
+
+  * Change my email address to gildor@debian.org,
+  * Made debian/control a PHONY target,
+  * Upgrade standards version to 3.7.2 (no change),
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 13 Jun 2006 19:15:24 +0200
+
+ocaml-fileutils (0.3.0-9) unstable; urgency=low
+
+  * Rebuild for OCaml 3.09.1
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Wed, 11 Jan 2006 00:07:01 +0100
+
+ocaml-fileutils (0.3.0-8) unstable; urgency=low
+
+  * Use Apps/Programming for doc-base
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Sat,  3 Dec 2005 01:11:09 +0100
+
+ocaml-fileutils (0.3.0-7) unstable; urgency=low
+
+  * Remove direct reference to ocaml library dir
+  * Change FSF address in debian/copyright
+  * Remove hardcoded OCaml ABI
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Fri,  2 Dec 2005 22:54:38 +0100
+
+ocaml-fileutils (0.3.0-6) unstable; urgency=low
+
+  * Transition to svn-buildpackage
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Mon, 22 Aug 2005 23:51:21 +0200
+
+ocaml-fileutils (0.3.0-5) unstable; urgency=low
+
+  * Sylvain:
+    - Generate fileUtil.mli and filePath.mli (Closes: #302438)
+  * Ralf:
+    - Standards-Version 3.6.2 (no change).
+    - Some improvements on the long package description.
+
+ --  Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Tue, 16 Aug 2005 10:16:51 +0200
+
+ocaml-fileutils (0.3.0-4) unstable; urgency=medium
+
+  * Transition to ocaml 3.08.3 : depends on ocaml-nox-3.08.3
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Wed, 23 Mar 2005 23:11:47 +0100
+
+ocaml-fileutils (0.3.0-3) unstable; urgency=low
+
+  * Rebuild for binary compatiblity
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Mon, 13 Dec 2004 23:55:32 +0100
+
+ocaml-fileutils (0.3.0-2) unstable; urgency=low
+
+  * Correct the generation of ocaml-fileutils on non native platform
+    (Closes: #267045)
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Fri, 27 Aug 2004 00:43:47 +0200
+
+ocaml-fileutils (0.3.0-1) unstable; urgency=low
+
+  * Initial upload
+
+ -- Sylvain LE GALL <sylvain.le-gall@polytechnique.org>  Sun, 27 Jun 2004 23:49:36 +0200

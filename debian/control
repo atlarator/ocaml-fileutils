@@ -1,15 +1,31 @@
-Source: template-repository
-Section: unknown
+Source: ocaml-fileutils
+Section: ocaml
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml,
+ ocaml-dune,
+ libounit-ocaml-dev,
+ dh-ocaml (>= 1.2)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://github.com/gildor478/ocaml-fileutils
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-fileutils.git
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-fileutils
 
-Package: template-repository
+Package: libfileutils-ocaml-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Recommends: ocaml-findlib
+Description: File manipulation for OCaml
+ This library provides some functions which operate on the file system
+ for the Objective Caml (OCaml) programming language. The aim is to enhance
+ the basic functionality provided by the OCaml standard Filename module.
+ .
+ It provides functions, written in pure OCaml, for manipulating files (mv, cp,
+ mkdir et al) and abstract filename (make_relative, make_absolute et al).
